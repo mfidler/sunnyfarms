@@ -27,12 +27,12 @@ get_header(); ?>
 		<?php } ?>
 		<div class="wrapper clearfix">
 			<div class="text-upper"><?php echo get_field('section_1_upper_text'); ?></div>
-			<h1 class="text-header"><span style="background-color: <?php echo get_field('section_1_header_background'); ?>;"><?php echo get_field('section_1_header_text'); ?></span></h1>
+			<h1 class="text-header"><span><?php echo get_field('section_1_header_text'); ?></span></h1>
 			<h2 class="text-subheader"><span><?php echo get_field('section_1_subheader_text'); ?></span></h2>
 	        <?php $link = get_field('section_1_button_link'); if($link) { ?>
-				<a class="button-link" style="background-color: <?php echo get_field('section_1_button_color'); ?>;" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
+				<a class="button-link" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
 			<?php } ?>
-			<a class="scroll" href="#" style="background-color: <?php echo get_field('section_1_scroll_color'); ?>;"><img class="block" src="<?php echo get_template_directory_uri(); ?>/images/icon-arrow.png"></a>
+			<a class="scroll" href="#"><img class="block" src="<?php echo get_template_directory_uri(); ?>/images/icon-arrow.png"></a>
 		</div>
 	</div>
 
@@ -48,7 +48,7 @@ get_header(); ?>
 				<div class="text">
 					<?php echo get_field('updates_copy'); ?>
 				</div>
-				<a class="button-link" style="background-color: #fa8f31;" href="/odor-control/">Latest Updates</a>
+				<a class="button-link" href="/odor-control/">Latest Updates</a>
 			</div>
 		</div>
 		<div class="alerts">
@@ -64,12 +64,12 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class="section2" style="background-color: <?php echo get_field('section_2_background_color'); ?>;">
+	<div class="section2">
 		<div class="wrapper clearfix">
 			<div class="content-left clearfix">
 				<div class="content-wysiwyg clearfix"><?php echo get_field('section_2_content'); ?></div>
 		        <?php $link = get_field('section_2_button_link'); if($link) { ?>
-					<a class="button-link" style="background-color: <?php echo get_field('section_2_button_color'); ?>;" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
+					<a class="button-link" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
 				<?php } ?>
 			</div>
 			<div class="content-right clearfix">
@@ -107,10 +107,10 @@ get_header(); ?>
 			<div class="background-image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
 		<?php } ?>
 		<div class="wrapper clearfix">
-			<div class="content-left clearfix" style="background-color: <?php echo get_field('section_3_content_background'); ?>;">
+			<div class="content-left clearfix">
 				<div class="content-wysiwyg clearfix"><?php echo get_field('section_3_content'); ?></div>
 		        <?php $link = get_field('section_3_button_link'); if($link) { ?>
-					<a class="button-link" style="background-color: <?php echo get_field('section_3_button_color'); ?>;" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
+					<a class="button-link" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
 				<?php } ?>
 			</div>
 		</div>
@@ -199,7 +199,7 @@ get_header(); ?>
 								text-decoration: none;
 								border: 0;
 								padding: 0 1em;
-								background-color: #fa8f31;
+								background-color: #000;
 								opacity: 1;
 								transition: opacity 0.2s ease-in-out;
 								border-radius: 0;
@@ -207,10 +207,6 @@ get_header(); ?>
 							}
 						</style>
 					</div>
-					<?php /* OLD FORM <form class="form-newsletter clearfix">
-						<input type="email" placeholder="name@email.com" required>
-						<input type="submit" value="Sign Up" style="background-color: <?php echo get_field('section_4_signup_button_color'); ?>;">
-					</form>*/ ?>
 				</div>
 			</div>
 		</div>
@@ -223,7 +219,7 @@ get_header(); ?>
                 <?php if( have_rows('section_5_button_links') ) { ?>
                     <?php while ( have_rows('section_5_button_links') ) { the_row(); ?>
 				        <?php $link = get_sub_field('button_link'); if($link) { ?>
-							<a class="button-link" style="background-color: <?php echo get_sub_field('button_color'); ?>;" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
+							<a class="button-link" href="<?php echo $link['url']; ?>" <?php if($link['target']) { ?> target="<?php echo $link['target']; ?>" <?php } ?>><?php echo $link['title']; ?></a>
 						<?php } ?>
                     <?php } ?>
                 <?php } ?>

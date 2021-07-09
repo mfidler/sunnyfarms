@@ -54,28 +54,28 @@ header { position: relative; z-index: 100;
     .header-menu-container {
         @media only screen and (max-width: 480px) { display: none;
             position: fixed; top: 60px; left: 0; right: 0; bottom: 0; z-index: 7;
-            background-color: #f6f8ff;
+            background-color: #C10016;
         }
     }
 
     .header-menu { list-style: none; float: right; display: block; margin: 0; padding: 2px 0;
         @media only screen and (max-width: 480px) { float: none; clear: both; padding: 0; margin: 0;
-            border-bottom: 1px solid #1d559c;
+            border-bottom: 1px solid #1c5030;
         }
         li { float: left; margin-right: 25px; padding: 15px 5px; position: relative;
             @media only screen and (max-width: 600px) { margin-right: 10px; }
             @media only screen and (max-width: 480px) { float: none; margin: 0; padding: 0; width: 100%;
-                border-top: 1px solid #1d559c;
+                border-top: 1px solid #1c5030;
             }
             a { display: block; padding: 10px;
-                font-size: 12px; line-height: 16px; font-weight: 700; color: #21559f; text-decoration: none; text-transform: uppercase;
+                font-size: 12px; line-height: 16px; font-weight: 700; color: #000; text-decoration: none; text-transform: uppercase;
                 @media only screen and (max-width: 600px) { font-size: 10px; }
                 @media only screen and (max-width: 480px) { padding: 15px 35px;
                     font-size: 22px; line-height: 1.333; text-transform: uppercase; color: #535353; font-weight: 600;
                 }
                 &::before { content: ''; display: block; height: 3px;
                     position: absolute; left: 0; right: 0; bottom: 10px;
-                    background-color: #444444;
+                    background-color: #3a483b;
                     opacity: 0;
                     transition: opacity 0.15s ease-in-out;
                     @media only screen and (max-width: 480px) { display: none; }
@@ -113,7 +113,7 @@ header { position: relative; z-index: 100;
             input[type="submit"] { display: block; width: 100%; height: 60px;
                 font-size: 14px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-transform: uppercase; text-decoration: none;
                 border: 0; padding: 0 1em;
-                background-color: #fa8f31;
+                background-color: #000;
                 box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
                 opacity: 1;
                 transition: opacity 0.2s ease-in-out;
@@ -207,7 +207,7 @@ main {
     }
     .alert {
         background: #FFF;
-        border-left: 6px solid #21559F;
+        border-left: 6px solid #000;
         padding: 18px 36px 18px 18px;
         margin-bottom: 29px;
         position: relative;
@@ -290,7 +290,7 @@ main {
         }
 
         &.blue {
-            background: #21559F;
+            background: #000;
             color: #FFF;
 
             a {
@@ -430,7 +430,7 @@ body.page-template-home {
             @media only screen and (max-width: 480px) { padding: 25px 0 0; margin: 0; }
             span { display: inline-block; padding: 0.5em 1em;
                 color: white; font-size: 45px; font-weight: 700; line-height: 1.2;
-                background-color: #21559f;
+                background-color: #000;
                 @media only screen and (max-width: 1000px) { font-size: 36px; }
                 @media only screen and (max-width: 480px) { font-size: 27px; }
             }
@@ -439,7 +439,7 @@ body.page-template-home {
             @media only screen and (max-width: 800px) { padding: 0 0 0 50px; }
             @media only screen and (max-width: 480px) { padding: 0; margin-top: 0; }
             span { display: inline-block; padding: 3em 1em 1.5em;
-                color: #21559f; font-size: 30px; font-weight: 400; line-height: 1.2;
+                color: #000; font-size: 30px; font-weight: 400; line-height: 1.2;
                 background-color: rgba(255, 255, 255, 0.8);
                 @media only screen and (max-width: 1000px) { font-size: 25px; }
                 @media only screen and (max-width: 480px) { font-size: 20px; padding: 1em; }
@@ -449,7 +449,7 @@ body.page-template-home {
             @media only screen and (max-width: 800px) { margin: -1.5em 0 0 50px; }
             @media only screen and (max-width: 480px) { margin: 0.5em 0 0 0; left: 0; }
             font-size: 12px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-transform: uppercase; text-decoration: none;
-            background-color: #21559f;
+            background-color: #000;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
             &::after { content: ''; display: block;
                 position: absolute; top: 0; left: 0; bottom: 0; right: 0;
@@ -461,7 +461,7 @@ body.page-template-home {
         }
         a.scroll { display: block; width: 75px; height: 75px; border-radius: 50%; margin: 75px auto 50px; padding: 18px 15px 12px; position: relative;
             text-decoration: none;
-            background-color: #21559f;
+            background-color: #000;
             &::after { content: ''; display: block; border-radius: 50%;
                 position: absolute; top: 0; left: 0; bottom: 0; right: 0;
                 background-color: rgba(255, 255, 255, 0.1);
@@ -491,21 +491,21 @@ body.page-template-home {
           }
 
           .header {
-            color: #FA8F31;
+            color: #C10016;
             font-size: 45px;
             font-weight: 700;
             line-height: 55px;
             margin-bottom: 34px;
           }
           .subheader {
-            color: #21559F;
+            color: #000;
             font-size: 35px;
             font-weight: 900;
             line-height: 43px;
             margin-bottom: 34px;
           }
           .text {
-            color: #21559F;
+            color: #000;
             font-size: 35px;
             font-weight: 300;
             line-height: 43px;
@@ -513,7 +513,7 @@ body.page-template-home {
           a.button-link {
             display: block; width: 175px; padding: 1em; margin-top: 37px; position: relative;
             font-size: 12px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-transform: uppercase; text-decoration: none;
-            background-color: #fa8f31;
+            background-color: #000;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 
             &::after {
@@ -542,7 +542,7 @@ body.page-template-home {
 
           .header {
             position: relative;
-            color: #21559F;
+            color: #000;
             font-family: Cochin;
             font-size: 45px;
             line-height: 52px;
@@ -559,13 +559,13 @@ body.page-template-home {
             }
           }
           .subheader {
-            color: #21559F;
+            color: #000;
             font-size: 30px;
             font-weight: 500;
             line-height: 37px;
           }
           a {
-            color: #21559F;
+            color: #000;
             font-size: 20px;
             font-weight: 500;
             line-height: 1;
@@ -577,21 +577,21 @@ body.page-template-home {
       }
     }
 
-    .section2 { padding: 75px 0 50px;
+   .section2 { padding: 75px 0 50px;
         @media only screen and (max-width: 800px) { padding: 50px 0 25px; }
-        background-color: #f1f9ec;
+        background-color: #F2F2F2;
         .content-left { float: left; width: 55%;
             @media only screen and (max-width: 800px) { width: 100%; float: none; }
             .content-wysiwyg {
-                font-size: 30px; line-height: 1.2; color: #548fdd;
+                font-size: 30px; line-height: 1.2; color: #000;
                 @media only screen and (max-width: 1000px) { font-size: 25px; }
                 @media only screen and (max-width: 480px) { font-size: 20px; }
                 p:first-child,
                 p:nth-child(2) { font-family: 'Lora', serif; }
-            }
+           }
             a.button-link { display: block; width: 175px; padding: 1em; margin-top: 1em; position: relative;
                 font-size: 12px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-transform: uppercase; text-decoration: none;
-                background-color: #fa8f31;
+                background-color: #000;
                 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
                 &::after { content: ''; display: block;
                     position: absolute; top: 0; left: 0; bottom: 0; right: 0;
@@ -623,21 +623,21 @@ body.page-template-home {
     .section3 { padding: 100px 0 100px; position: relative;
         @media only screen and (max-width: 800px) { padding: 75px 0 75px; }
         @media only screen and (max-width: 480px) { padding: 50px 0 50px; }
-        background-color: #f1f9ec;
+        background-color: #F2F2F2;
         .background-image { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
         .content-left { float: left; width: 55%; padding: 25px 50px;
             position: relative; left: -50px;
-            background-color: #91c94e;
+            background-color: #C10016;
             @media only screen and (max-width: 800px) { width: 100%; float: none; left: 0; }
             .content-wysiwyg {
                 font-size: 30px; line-height: 1.2; color: white;
                 @media only screen and (max-width: 1000px) { font-size: 25px; }
                 @media only screen and (max-width: 480px) { font-size: 20px; }
-                p:first-child { padding-top: 1em; }
+                p:first-child { font-size: 120%; padding-top: 1em; }
             }
             a.button-link { display: block; width: 175px; padding: 1em; margin-top: 2.5em; margin-bottom: 1em; position: relative;
                 font-size: 12px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-transform: uppercase; text-decoration: none;
-                background-color: #fa8f31;
+                background-color: #000;
                 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
                 &::after { content: ''; display: block;
                     position: absolute; top: 0; left: 0; bottom: 0; right: 0;
@@ -678,7 +678,7 @@ body.page-template-home {
             }
         }
         .content-lower { margin: 25px auto; max-width: 1200px; padding: 25px;
-            background-color: #f6f8ff;
+            background-color: #F2F2F2;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
             .content-left { float: left; width: 50%;
                 font-size: 24px; font-weight: 700; line-height: 1.2; color: #535353;
@@ -703,7 +703,7 @@ body.page-template-home {
                         position: absolute; right: 0; top: 0; bottom: 0;
                         font-size: 14px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-transform: uppercase; text-decoration: none;
                         border: 0; padding: 0 1em;
-                        background-color: #fa8f31;
+                        background-color: #000;
                         opacity: 1;
                         transition: opacity 0.2s ease-in-out;
                         &.disabled { opacity: 0.6; cursor: default; }
@@ -717,12 +717,12 @@ body.page-template-home {
     }
 
     .section5 {
-        background-color: #f6f8ff;
+        background-color: #F2F2F2;
         .content-left { width: 100%; min-height: 500px; padding: 25px 50% 25px 0;
-            background-color: #f6f8ff;
+            background-color: #F2F2F2;
             @media only screen and (max-width: 800px) { width: 100%; min-height: 0; padding: 25px 0; }
             .content-wysiwyg {
-                font-size: 30px; line-height: 1.2; color: #548fdd;
+                font-size: 30px; line-height: 1.2; color: #000;
                 @media only screen and (max-width: 1000px) { font-size: 25px; }
                 @media only screen and (max-width: 480px) { font-size: 20px; }
                 p:first-child { font-size: 120%; padding-top: 1em; }
@@ -730,7 +730,7 @@ body.page-template-home {
             a.button-link { float: left; display: block; width: 175px; padding: 1em; margin-top: 2.5em; margin-bottom: 1em; margin-right: 1.5em; position: relative;
                 &:last-child { margin-bottom: 2.5em; }
                 font-size: 12px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-transform: uppercase; text-decoration: none;
-                background-color: #21559f;
+                background-color: #000;
                 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
                 &::after { content: ''; display: block;
                     position: absolute; top: 0; left: 0; bottom: 0; right: 0;
@@ -743,7 +743,7 @@ body.page-template-home {
         }
         .content-right { width: 40%; padding: 25px; overflow: auto;
             position: absolute; left: 60%; top: 0; bottom: 0; right: 0;
-            background-color: #21559f;
+            background-color: #C10016;
             @media only screen and (max-width: 800px) { width: 100%; position: static; padding: 25px; margin: 25px auto; overflow: visible; }
             .content-header { padding: 1em 0;
                 font-size: 24px; line-height: 1.2; color: white;
@@ -785,17 +785,17 @@ body.page-template-about {
         .background-image { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
         .content-header { max-width: 400px; padding: 1em 0.5em; margin: 0;
             position: absolute; top: 125px; left: 5%;
-            font-size: 48px; color: #21559f; line-height: 1.1; font-weight: 300; text-align: left;
+            font-size: 48px; color: #fff; line-height: 1.1; font-weight: 300; text-align: left;
             @media only screen and (max-width: 1200px) { max-width: 33.33%; }
             @media only screen and (max-width: 1000px) { font-size: 40px; }
             @media only screen and (max-width: 800px) { max-width: 100%; position: static; }
             @media only screen and (max-width: 480px) { font-size: 32px; }
-            background-color: #f6f8ff;
-            border-bottom: 5px solid #fd8e3e;
+            background-color: #000;
+            border-bottom: 5px solid #C10016;
         }
         .content-container { width: 70%; margin-left: 30%; padding: 25px 50px 25px 10%;
-            background-color: rgba(33,85,159,0.85);
-            font-size: 20px; line-height: 1.2; color: white; font-weight: 400;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 20px; line-height: 1.2; color: #000; font-weight: 400;
             @media only screen and (max-width: 1000px) { font-size: 18px; }
             @media only screen and (max-width: 800px) { width: 100%; margin-left: 0; padding: 25px; margin-top: 25px; }
             @media only screen and (max-width: 480px) { font-size: 16px; }
@@ -806,14 +806,14 @@ body.page-template-about {
         .background-image { position: absolute; left: 0; top: 0; right: 0; bottom: 0;
             &::after { content: ''; display: block;
                 position: absolute; left: 0; top: 0; right: 0; bottom: 0;
-                background-color: rgba(246, 248, 255, 0.8);
+                background-color: rgba(242, 248, 236, 0.8);
             }
         }
         .content-left { width: 70%; float: left; padding: 50px;
             @media only screen and (max-width: 1000px) { padding: 50px 25px; width: 60%; }
             @media only screen and (max-width: 800px) { width: 100%; float: none; }
             @media only screen and (max-width: 480px) { padding: 50px 0 25px; }
-            .content-wysiwyg { font-size: 24px; line-height: 1.2; color: #1d559c; font-weight: 400;
+            .content-wysiwyg { font-size: 24px; line-height: 1.2; color: #000; font-weight: 400;
                 @media only screen and (max-width: 1000px) { font-size: 21px; }
                 @media only screen and (max-width: 800px) { text-align: center; }
                 @media only screen and (max-width: 480px) { font-size: 18px; }
@@ -832,10 +832,10 @@ body.page-template-about {
                     @media only screen and (max-width: 480px) { font-size: 18px; }
                 }
                 a.block-link { display: block; padding: 1em; position: relative;
-                    font-size: 20px; line-height: 1.2; font-weight: 700; color: #535353; text-align: center; text-decoration: none;
+                    font-size: 20px; line-height: 1.2; font-weight: 700; color: #fff; text-align: center; text-decoration: none;
                     @media only screen and (max-width: 1000px) { font-size: 18px; }
                     @media only screen and (max-width: 480px) { font-size: 16px; }
-                    background-color: #21559f;
+                    background-color: #000;
                     &::after { content: ''; display: block;
                         position: absolute; top: 0; left: 0; bottom: 0; right: 0;
                         background-color: rgba(255, 255, 255, 0.1);
@@ -849,7 +849,7 @@ body.page-template-about {
     }
 
     .section3 { padding: 50px 0;
-        background-color: #91c94e;
+        background-color: #C10016;
         .content-header { max-width: 1000px; margin: 0 auto; padding: 0 0 1em;
             font-size: 48px; line-height: 1.2; color: white; font-weight: 700; text-align: center;
             @media only screen and (max-width: 1000px) { font-size: 40px; }
@@ -902,18 +902,18 @@ body.page-template-about {
 
     .section5 { position: relative; padding: 50px 0 25px;
         @media only screen and (max-width: 800px) { padding: 25px 0; }
-        background-color: #f1f9ec;
+        background-color: #F2F2F2;
         .content-left { width: 70%; float: left; padding: 50px;
             @media only screen and (max-width: 1000px) { padding: 50px 25px; width: 60%; }
             @media only screen and (max-width: 800px) { width: 100%; float: none; }
             @media only screen and (max-width: 480px) { padding: 25px 0; }
             .content-header { margin: 0; padding: 0 0 0.5em;
-                font-size: 48px; line-height: 1.2; color: white; font-weight: 700; text-align: left;
+                font-size: 48px; line-height: 1.2; color: #535353; font-weight: 700; text-align: left;
                 @media only screen and (max-width: 1000px) { font-size: 40px; }
                 @media only screen and (max-width: 800px) { text-align: center; }
                 @media only screen and (max-width: 480px) { font-size: 32px; }
             }
-            .content-wysiwyg { font-size: 24px; line-height: 1.2; color: white; font-weight: 400;
+            .content-wysiwyg { font-size: 24px; line-height: 1.2; color: #000; font-weight: 400;
                 @media only screen and (max-width: 1000px) { font-size: 21px; }
                 @media only screen and (max-width: 800px) { text-align: center; }
                 @media only screen and (max-width: 480px) { font-size: 18px; }
@@ -932,10 +932,10 @@ body.page-template-about {
                     @media only screen and (max-width: 480px) { font-size: 18px; }
                 }
                 a.block-link { display: block; padding: 1em; position: relative;
-                    font-size: 20px; line-height: 1.2; font-weight: 700; color: #535353; text-align: center; text-decoration: none;
+                    font-size: 20px; line-height: 1.2; font-weight: 700; color: #fff; text-align: center; text-decoration: none;
                     @media only screen and (max-width: 1000px) { font-size: 18px; }
                     @media only screen and (max-width: 480px) { font-size: 16px; }
-                    background-color: #21559f;
+                    background-color: #000;
                     &::after { content: ''; display: block;
                         position: absolute; top: 0; left: 0; bottom: 0; right: 0;
                         background-color: rgba(255, 255, 255, 0.1);
@@ -990,7 +990,7 @@ body.page-template-contact {
     .section1 {
         .section-container { width: 1100px; max-width: 100%; padding: 50px; margin: 75px 0;
             @media only screen and (max-width: 480px) { padding: 25px; margin: 50px 0; }
-            background-color: rgba(246,248,255,0.75);
+            background-color: rgba(255, 255, 255, 0.8);
             h1.text-header { float: left; margin: 0 0 0.5em; padding: 0;
                 color: #535353; font-size: 45px; font-weight: 700; line-height: 1.1; text-align: left;
                 @media only screen and (max-width: 1000px) { font-size: 36px; }
@@ -1038,7 +1038,7 @@ body.page-template-contact {
                             font-size: 14px; line-height: 1.25; font-weight: 700; color: white; text-align: center; text-decoration: none;
                             border: 0; padding: 1em;
                             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-                            background-color: #fa8f31;
+                            background-color: #000;
                             opacity: 1;
                             transition: opacity 0.2s ease-in-out;
                             &.disabled { opacity: 0.6; cursor: default; }
@@ -1054,7 +1054,7 @@ body.page-template-contact {
             .content-container { float: left; width: 320px; margin-top: 25px; padding: 35px 25px;
                 @media only screen and (max-width: 1000px) { width: 100%; max-width: 320px; }
                 @media only screen and (max-width: 480px) { max-width: 100%; }
-                background-color: #21559f;
+                background-color: #C10016;
                 .content-wysiwyg {
                     color: white; font-size: 14px; line-height: 1.2;
                 }
@@ -1089,7 +1089,7 @@ body.blog {
                 &:last-child { margin-bottom: 0; }
             }
             .news-date { padding: 0.5em 25px;
-                color: #00558d; font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: 1px;
+                color: #000; font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: 1px;
                 @media only screen and (max-width: 1000px) { font-size: 18px; }
                 @media only screen and (max-width: 480px) { font-size: 16px; }
             }
@@ -1102,7 +1102,7 @@ body.blog {
                     position: absolute; left: 0; top: 0; bottom: 0;
                     a { display: block; text-decoration: none;
                         position: absolute; left: 0; right: 0; top: 0; bottom: 0;
-                        background-color: #095593;
+                        background-color: #C10016;
                         &::after { content: ''; display: block;
                             position: absolute; top: 0; left: 0; bottom: 0; right: 0;
                             background-color: rgba(255, 255, 255, 0.1);
@@ -1126,7 +1126,7 @@ body.blog {
                         @media only screen and (max-width: 480px) { font-size: 16px; }
                     }
                     .news-more { padding-top: 1em;
-                        a { font-size: 80%; color: #00558d; letter-spacing: 1px; font-weight: bold; text-transform: uppercase; }
+                        a { font-size: 80%; color: #000; letter-spacing: 1px; font-weight: bold; text-transform: uppercase; }
                     }
                 }
             }
@@ -1136,9 +1136,9 @@ body.blog {
                 p { margin-top: 50px; text-align: center; }
                 a, span { display: inline-block; padding: 1em 1.5em; margin: 0.333em; position: relative;
                     font-size: 10px; text-decoration: none; color: white;
-                    background-color: #095593;
+                    background-color: #C10016;
                     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-                    &.current { background-color: #fa8f31; }
+                    &.current { background-color: #000; }
                     &::after { content: ''; display: block;
                         position: absolute; top: 0; left: 0; bottom: 0; right: 0;
                         background-color: rgba(255, 255, 255, 0.1);
@@ -1212,7 +1212,7 @@ footer { padding: 25px 0; position: relative;
         a.content-accordion-title { display: block; position: relative; padding: 20px 75px 20px 50px;
             @media only screen and (max-width: 480px) { padding: 20px 75px 20px 25px; }
             font-size: 16px; line-height: 1.1; color: white; text-decoration: none; font-weight: 700;
-            background-color: #21559f;
+            background-color: #000;
             transition: transform 400ms ease-in-out;
 
             .vert-align-middle > span { text-align: left; }
@@ -1235,7 +1235,7 @@ footer { padding: 25px 0; position: relative;
         }
         .content-accordion-content { display: none; padding: 30px 75px 30px 50px;
             @media only screen and (max-width: 480px) { padding: 20px 75px 20px 25px; }
-            background-color: #f6f8ff;
+            background-color: #F2F2F2;
             color: #535353; font-size: 14px; line-height: 1.4;
             p { margin: 0 0 1em;
                 &:last-child { margin-bottom: 0; }
@@ -1300,7 +1300,7 @@ footer { padding: 25px 0; position: relative;
             border-radius: 50%;
             transition: background-color .15s ease-in-out;
             &:hover,
-            &.active { background-color: #21559f; }
+            &.active { background-color: #C10016; }
         }
     }
     .slider-prev,

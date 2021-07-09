@@ -72,7 +72,7 @@ get_header(); ?>
     <?php $image = get_field('background_image'); if($image) { ?>
 		<div class="background-image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
 	<?php } ?>
-	
+
 	<div class="section1">
 		<div class="wrapper clearfix">
 			<div class="section-container clearfix">
@@ -110,13 +110,13 @@ get_header(); ?>
 					</div>
 					<div class="form-row clearfix">
 						<div class="form-input clearfix">
-							<input type="submit" name="submit" value="Submit" style="background-color: <?php echo get_field('submit_button_color'); ?>;">
+							<input type="submit" name="submit" value="Submit">
 						</div>
 					</div>
 					<div class="form-sent clearfix" style="display: none;"></div>
 				</form>
 
-				<div class="content-container clearfix" style="background-color: <?php echo get_field('sidebar_color'); ?>;">
+				<div class="content-container clearfix">
 					<div class="content-wysiwyg clearfix"><?php echo get_field('sidebar_content'); ?></div>
 				</div>
 
