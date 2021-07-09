@@ -21,6 +21,22 @@ get_header(); ?>
 
 <main>
 
+	<div class="callout-nowwin" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/win-bg.jpg')">
+		<div class="nowwin-wrap">
+			<div class="title">
+				Performance for the planet
+			</div>
+			<div class="text">
+				WIN Waste Innovations delivers reliable waste collection and hauling backed by personal, responsive customer service. We’re connected to the communities we serve and committed to the future we share. That’s how we all WIN.
+			</div>
+			<div class="logo-button">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/win-waste-innovations.png" alt="WIN Waste Innovations" />
+				<a href="https://www.win-waste.com/" target="_blank">Learn more about WIN Waste Innovations</a>
+			</div>
+		</div>
+		<img class="headshot" src="<?php echo get_template_directory_uri(); ?>/images/win-headshot.png" alt="" />
+	</div>
+
 	<div class="section1">
 	    <?php $image = get_field('section_1_background'); if($image) { ?>
 			<div class="background-image" style="background-image: url(<?php echo $image['url']; ?>);"></div>
