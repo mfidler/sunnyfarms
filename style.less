@@ -754,7 +754,7 @@ body.page-template-home {
           .header {
             position: relative;
             color: #000;
-            font-family: Cochin;
+            font-family: 'Lora', serif;
             font-size: 45px;
             line-height: 52px;
             margin-bottom: 37px;
@@ -1516,4 +1516,89 @@ footer { padding: 25px 0; position: relative;
     }
     .slider-prev,
     .slider-next { display: none; }
+}
+
+// Waste Disposal Request
+body.page-template-disposal-request {
+  background: #F5F5F5;
+}
+.callout-disposal-request-form {
+  padding: 70px 100px;
+
+  @media screen and (max-width: 650px) {
+    padding: 70px 20px;
+  }
+
+  .mwrapper {
+    margin: 0 auto;
+    width: 1300px;
+    max-width: 100%;
+
+    .mheader {
+      font-family: Montserrat;
+      font-size: 45px;
+      line-height: 49px;
+      font-weight: bold;
+      letter-spacing: 0px;
+      color: #515151;
+      margin: 0 0 30px 0;
+    }
+    .mcopy {
+      font-family: Montserrat;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: #515151;
+      max-width: 750px;
+    }
+    .mform {
+      margin: 0 -10px;
+      max-width: 480px;
+      margin-top: 50px;
+
+      .nf-response-msg {
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #515151;
+        padding: 0 10px;
+      }
+      .nf-form-fields-required,
+      .nf-field-label {
+        display: none;
+      }
+      .nf-after-form-content .nf-error-field-errors,
+      .nf-multi-cell .nf-cell {
+        padding: 0 10px;
+      }
+      input {
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0px 2px 4px #00000029;
+
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: normal;
+        color: #515151;
+        padding: 11px 26px;
+      }
+      [type="button"] {
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: bold;
+        color: #FFF;
+        padding: 11px 45px;
+
+        background: #000;
+        box-shadow: 0px 2px 4px #00000029;
+
+        &:hover {
+          background: #515151;
+        }
+      }
+    }
+  }
 }

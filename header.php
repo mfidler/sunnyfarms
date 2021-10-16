@@ -24,12 +24,11 @@
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=1;">
 
     <title></title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'>
     <link rel='stylesheet' type='text/css' href='<?php echo get_template_directory_uri(); ?>/style.css?t=<?php echo time(); ?>'>
 
